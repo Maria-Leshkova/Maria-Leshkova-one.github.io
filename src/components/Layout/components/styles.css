@@ -1,0 +1,344 @@
+.header-container {
+    background-color: #2F6991;
+    display: flex;
+    padding: 24px 62px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.header-logo {
+    font-family: 'Sansita', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+}
+.logo {
+    text-decoration: none;
+    color: white;
+}
+.header-contacts {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+.header-contacts-logo {
+    margin-right: 10px;
+}
+.nav {
+    width: 50%;
+    text-align: right;
+}
+.close-wrapper {
+    padding: 24px 15px;
+    display: flex;
+    justify-content: end;
+}
+.close-menu {
+    float: right;
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-menu {
+    height: 100vh;
+    background-color: #649CC1;
+    z-index: 10;
+    top: 0;
+    position: absolute;
+    cursor: default;
+    width: 100vw;
+    display: none;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 0;
+    }
+    to {
+        margin-left: 0%;
+        width: 100vw;
+    }
+}
+@keyframes slideout {
+    from {
+        margin-left: 0%;
+        width: 100vw;
+    }
+    to {
+        margin-left: 100%;
+        width: 0;
+    }
+}
+.slide-in {
+    animation-duration: 3s;
+    animation-name: slidein;
+    display: block;
+}
+.slide-out {
+    animation-duration: 3s;
+    animation-name: slideout;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    margin-right: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+.nav-link:last-child{
+    margin-right: 0;
+}
+.active {
+    border-bottom: 1px solid white;
+    transition: 0.3s ease-out;
+}
+.footer {
+    padding: 24px 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+}
+.footer-about {
+    display: flex;
+    padding-bottom: 15px;
+}
+.about-icon {
+    margin-right: 15px;
+}
+.footer-contacts {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+.license-container {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+}
+.contacts-icons {
+    padding: 5px 0;
+}
+.footer-logo {
+    color: #2F6991;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 15px;
+}
+.year {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 22px;
+}
+.separator {
+    padding: 0 5px;
+}
+.form-wrapper {
+    padding: 24px 62px;
+    background-color: #2F6991;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.form-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+    cursor: default;
+}
+.form-container {
+    padding-top: 25px;
+    justify-content: space-between;
+}
+.form {
+    width: 40%;
+}
+.maps-link {
+    width: 50%;
+}
+.map {
+    width: 100%;
+}
+.label {
+    position: absolute;
+    color: #2F6991;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    top: 10px;
+    left: 8px;
+}
+.label-span {
+    color: red;
+}
+.input-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+.input {
+    width: 100%;
+    border: none;
+    padding: 16px 8px 10px;
+    resize: none;
+}
+.focused {
+    font-size: 12px;
+    line-height: 14px;
+    top: 1px;
+    transition: 0.3s ease-out;
+}
+.form-button {
+    padding: 15px 55px;
+    background: linear-gradient(268.54deg, #EF5161 -17.2%, #BA73E8 54.21%, #20B7E5 123.9%);
+    border: none;
+    color: white;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-shadow: 0px 4px 4px rgba(35, 25, 0, 0.25);
+}
+.errorMessage {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+    transition: 0.3s ease-out;
+}
+.modal {
+    background: #649CC1;
+    color: white;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    padding: 13px 13px 40px;
+    text-align: center;
+    min-width: 320px;
+}
+.modal-title {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 12px 0;
+}
+.close-icon {
+    width: 100%;
+    text-align: right;
+}
+.ReactModal__Overlay {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+@media screen and (max-width: 768px) {
+    .nav, .contacts {
+        display: none;
+    }
+    .header-container, .footer, .form-wrapper {
+        padding: 15px 20px;
+    }
+    .about-icon {
+        width: 19px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .address {
+        display: flex;
+    }
+    .contacts-wrapper, .footer-contacts {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .contacts-wrapper {
+        display: flex;
+    }
+    .maps-link {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .license-container {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px 0;
+    }
+    .year {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-logo {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        margin-bottom: 0;
+    }
+    .footer-logo-wrapper {
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .form-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .form-container {
+        flex-direction: column;
+        padding: 12px 20px;
+    }
+    .form {
+        width: 96%;
+    }
+    .modal {
+        width: 96%;
+        left: 0;
+    }
+}
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+        overflow: hidden;
+    }
+}

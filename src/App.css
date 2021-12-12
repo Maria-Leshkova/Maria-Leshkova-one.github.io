@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.flex {
+  display: flex;
+}
+.page-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #2F6991;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2F6991;
+  width: fit-content;
+}
+.page-wrapper {
+  padding: 50px 62px;
+  font-family: Raleway;
+  color: #2F6991;
+}
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    padding: 15px 20px;
+  }
+  .page-title {
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 3px;
+  }
+}
